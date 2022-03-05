@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.p-inputtext{
+    background: transparent;
+    width: 100%;
+}
+.p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.1rem #010204;
+    border-color: transparent;
+}
+.navbar-icon i {
+    margin: 0 10px 0 20px;
+}
+.pi {
+    font-size: 1.2rem;
+}
+.medical-name{
+    padding: 0 10px;
+}
+.search{
+    padding: 0 10px;
+}
+.top-item{
+    padding: 8px 0;
+}

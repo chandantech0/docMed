@@ -1,0 +1,29 @@
+<div class="top-item bg-light">
+  <div class="row" *ngIf="!search">
+    <div class="col-8">
+      <div class="medical-name mt-2">
+        <img src="../../assets/icons8-medical-24.png" alt="medical" class="img-fluid" /> &nbsp;
+        <span>Shivam Medical Store</span>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="search">
+        <button (click)="isSearch()" pButton pRipple type="button" icon="pi pi-search"
+          class="float-end p-button-rounded p-button-success p-button-text"></button>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="search">
+    <div class="col-10">
+      <div class="medical-name">
+        <input type="text" id="search" pInputText />
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="search">
+        <button (click)="searchClose()" pButton pRipple type="button" icon="pi pi-times"
+        class="float-end p-button-rounded p-button-danger p-button-text"></button>
+      </div>
+    </div>
+  </div>
+</div>
