@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DoctorLayoutComponent } from './doctor-layout.component';
+import { OrderPlacedComponent } from './order-placed/order-placed.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,18 @@ const routes: Routes = [
       {
         path: 'chemist',
         loadChildren: () => import('./chemist-list/chemist-list.module').then(m => m.ChemistListModule)
+      },
+      {
+        path: 'medicine',
+        loadChildren: () => import('./medicine-list/medicine-list.module').then(m => m.MedicineListModule)
+      },
+      {
+        path: 'checkout',
+        loadChildren: () => import('./medicine-checkout/medicine-checkout.module').then(m => m.MedicineCheckoutModule)
+      },
+      {
+        path: 'placed',
+        component: OrderPlacedComponent
       }
     ]
   }

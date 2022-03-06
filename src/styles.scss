@@ -1,29 +1,141 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    font-family: 'Montserrat', sans-serif;
+body,
+.p-inputtext,
+.p-component {
+  font-family: 'Montserrat', sans-serif !important;
 }
-.p-inputtext{
-    background: transparent;
-    width: 100%;
+
+.p-inputtext {
+  background: transparent;
+  width: 100%;
 }
+
 .p-inputtext:enabled:focus {
-    outline: 0 none;
-    outline-offset: 0;
-    box-shadow: 0 0 0 0.1rem #010204;
-    border-color: transparent;
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.1rem #010204;
+  border-color: transparent;
 }
+
 .navbar-icon i {
-    margin: 0 10px 0 20px;
+  margin: 0 10px 0 20px;
 }
+
 .pi {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
-.medical-name{
-    padding: 0 10px;
+
+.medical-name {
+  padding: 18px 0;
 }
-.search{
-    padding: 0 10px;
+
+.search {
+  padding: 5px 0;
 }
-.top-item{
-    padding: 8px 0;
+
+.search-input {
+  padding: 6px 0;
+}
+
+.top-item {
+  padding: 8px 0;
+}
+
+.small {
+  font-size: 0.8rem;
+  // display: inline-flex;
+  color: #838383;
+}
+
+.gradient,
+.gradient:enabled:hover {
+  border: none;
+  background: linear-gradient(to right, #08D78C, #00AB6D);
+}
+
+.p-button:focus {
+  box-shadow: none;
+}
+
+.medicine-list-card .p-card-content {
+  padding: 0;
+}
+
+.medicine-list-card .p-card-body {
+  padding: 1rem 0.5rem;
+  margin-bottom: 10px;
+}
+
+.fw-bold {
+  font-weight: 500 !important;
+}
+
+.medicine-list-card .p-button {
+  padding: 0.1rem 0.5rem 0.1rem 1rem;
+}
+
+.navbar {
+  box-shadow: 0px 4px 8px rgb(0 0 0 / 4%);
+}
+
+.order-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.medicine-list .p-card {
+  background: #F7F9FB;
+  box-shadow: none;
+}
+
+.medicine-list-card .small {
+  font-size: .75rem;
+  ;
+}
+
+.p-button {
+  border: none
+}
+
+.set-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.form-control, .form-control:focus{
+    border-color: #afafaf6b;
+    box-shadow: none;
+    height: 50px;
+}
+
+.checkout button{
+    padding: 0.75rem 0.6rem;
+    width: 100%;
+    display: block;
+}
+.chemist-list .p-card .p-card-body, .chemist-list .p-card .p-card-content{
+    padding: 0;
+}
+.chemist-list .footer{
+    padding: 15px;
+}
+.chemist-list .p-card{
+    box-shadow: none;
+    background: #F7F9FB;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+.img-radius{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.dropdown-menu[data-bs-popper] {
+    right: 0;
+    left: inherit;
 }

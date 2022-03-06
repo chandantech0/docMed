@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { SharedModule } from './shared';
 import { SelectloginComponent } from './shared/selectlogin/selectlogin.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

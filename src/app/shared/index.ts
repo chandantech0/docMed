@@ -15,6 +15,10 @@ import { InputTextareaModule } from "primeng/inputtextarea";
 import {ButtonModule} from 'primeng/button';
 import { RippleModule } from "primeng/ripple";
 import {InplaceModule} from 'primeng/inplace';
+import {SkeletonModule} from 'primeng/skeleton';
+import { FocusDirective } from "../doctor-layout/services/directives/focus.directive";
+import {CardModule} from 'primeng/card';
+import {ToastModule} from 'primeng/toast';
 @NgModule({
   imports: [
     CommonModule,
@@ -32,9 +36,12 @@ import {InplaceModule} from 'primeng/inplace';
     InputTextareaModule,
     ButtonModule,
     RippleModule,
-    InplaceModule
+    SkeletonModule,
+    CardModule,
+    ToastModule
   ],
   declarations: [
+    FocusDirective
   ],
   entryComponents: [
   ],
@@ -54,7 +61,10 @@ import {InplaceModule} from 'primeng/inplace';
     InputTextareaModule,
     ButtonModule,
     RippleModule,
-    InplaceModule
+    SkeletonModule,
+    FocusDirective,
+    CardModule,
+    ToastModule
   ]
 })
 export class SharedModule {}

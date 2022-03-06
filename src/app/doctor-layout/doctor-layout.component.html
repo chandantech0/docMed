@@ -6,9 +6,16 @@
         <button pButton pRipple type="button" icon="pi pi-bell"
           class="p-button-rounded p-button-success p-button-text"></button>
       </div>
-      <div>
+      <div class="dropdown">
         <button pButton pRipple type="button" icon="pi pi-user"
-          class="p-button-rounded p-button-info p-button-text"></button>
+          class="p-button-rounded p-button-info p-button-text" id="dropdownMenuLink"
+          data-bs-toggle="dropdown" aria-expanded="false"></button>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Order History</a></li>
+          </ul>
       </div>
     </div>
   </div>

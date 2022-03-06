@@ -4,10 +4,13 @@ import { DoctorLayoutComponent } from './doctor-layout.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DoctorLayoutRouteRoutingModule } from './doctor-layout-route-routing.module';
 import { SharedModule } from '../shared';
+import { OrderPlacedComponent } from './order-placed/order-placed.component';
+
 
 @NgModule({
   declarations: [
-    DoctorLayoutComponent
+    DoctorLayoutComponent,
+    OrderPlacedComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,173 @@
+<div class="set-sticky container-fluid bg-white">
+  <div class="row" *ngIf="!search">
+    <div class="col-10">
+      <div class="mt-2 mb-2">
+        <h6 class="mb-1">Shivam Medical Store</h6>
+        <p class="small mb-0" style="line-height: 1.4;">Ghorawal Road near private bus stand Robertsganj Sonebhadra</p>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="search">
+        <button (click)="isSearch()" pButton pRipple type="button" icon="pi pi-search"
+          class="float-end p-button-rounded p-button-success p-button-text"></button>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="search">
+    <div class="col-10">
+      <div class="mt-2 mb-2">
+        <input appFocus placeholder="Search Medicines..." type="text" #search pInputText />
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="search">
+        <button (click)="searchClose()" pButton pRipple type="button" icon="pi pi-times"
+          class="p-button-rounded p-button-danger p-button-text"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="medicine-list container-fluid mt-4">
+  <div class="row">
+    <div class="col-12">
+      <h6>List of Medicine</h6>
+    </div>
+  </div>
+
+  <div class="scroll">
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button (click)="add()" pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p-card class="medicine-list-card">
+          <div class="row">
+            <div class="col-8">
+              <h6 class="mb-1">Paracrat 250 Mg Tablet</h6>
+              <p class="small mb-0"> Syncom Formulations (India) Ltd.</p>
+            </div>
+            <div class="col-4">
+              <button pButton pRipple type="button" class="gradient p-button-rounded">Add +</button>
+              <p class="small mb-0">Rs. 400/Teb</p>
+            </div>
+          </div>
+        </p-card>
+      </div>
+    </div>
+
+  </div>
+  <!-- Order Box -->
+  <div class="order-box gradient" *ngIf="orderBox">
+    <div class="row">
+      <div class="col-8">
+        <small class="small text-white">12 Items</small>
+        <h5 class="text-white">₹ 1050 (Including Tax)</h5>
+      </div>
+      <div class="col-4">
+        <button [routerLink]="['/doctor/checkout']" pButton pRipple type="button"
+          class="bg-white fw-bold text-black p-button-rounded">Order</button>
+      </div>
+    </div>
+  </div>
+</div>
